@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using granitestore.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,6 @@ namespace granitestore.Data
             : base(options)
         {
         }
+        public DbSet<ProductTypes> productTypes { get; set; }
     }
 }
